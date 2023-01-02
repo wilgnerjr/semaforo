@@ -1,5 +1,10 @@
 const img = document.getElementById('img');
 const buttons = document.getElementById('buttons');
+// const vr = document.getElementsByClassName('vr');
+// const ay = document.getElementsByClassName('ay');
+// const vg = document.getElementsByClassName('vg');
+// const aa = document.getElementsByClassName('aa');
+
 let colorIndex = 0;
 let intervalId = null;
 
@@ -32,7 +37,7 @@ const stop = () => {
 const turnOn = {
     'red': () => img.src = "./imagens/vermelho.png",
     'yellow': () => img.src = "./imagens/amarelo.png",
-    'green': () => img.src = "./imagens/verde.png",
+    'green': () => img.src = "./imagens/verde.png" ,
     'automatic' : () => intervalId = setInterval(changeColor, 700 )
 }
 
